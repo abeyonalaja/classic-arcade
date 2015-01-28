@@ -25,8 +25,12 @@ public class Grime : MonoBehaviour {
 		grimeInstance.velocity = new Vector2 (0, speed);
 	}
 
-	void OnCollisionEnter2D(Collision2D col) {
-		if(col.gameObject.name == "Spongy"){
+	void OnCollisionEnter2D(Collision2D coll) {
+		if(coll.gameObject.name == "Spongy"){
+			Destroy(gameObject);
+		}
+
+		if(coll.gameObject.name == "Bottom") {
 			Destroy(gameObject);
 		}
 	}
