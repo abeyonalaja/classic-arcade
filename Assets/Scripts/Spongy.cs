@@ -5,6 +5,7 @@ public class Spongy : MonoBehaviour {
 
 	public float speed = 3.0f;
 
+
 	// Use this for initialization
 	void Start () {
 	
